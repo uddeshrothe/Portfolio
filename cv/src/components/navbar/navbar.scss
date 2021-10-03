@@ -1,5 +1,17 @@
-.navbar{
-    width: 100%;
-    height: 70px;
-    background-color: darkblue;
+@import "../../global.scss";
+
+.navbar {
+  width: 100%;
+  background-color: $mainColor;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+}
+
+.container-fluid{
+    margin:0 10vh 0 10vh;
+}
+
+.collapse{
+    font-size: large;
 }
