@@ -2,6 +2,7 @@ import './navbar.scss'
 
 function Navbar() {
     return (
+        <div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#intro">Ore wa</a>
@@ -31,6 +32,7 @@ function Navbar() {
     </div>
   </div>
 </nav>
+</div>
     )
 }
 
