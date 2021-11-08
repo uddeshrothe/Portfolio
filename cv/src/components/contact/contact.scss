@@ -1,3 +1,91 @@
-.contact{
-    background-color: lightblue;
+.contact {
+  background-color: #fff;
+  display: flex;
+
+  .left {
+    flex: 0.5;
+    overflow: hidden;
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    position: relative;
+
+    .title {
+      text-align: center;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      flex-direction: column;
+
+      span {
+        font-size: 80px;
+      }
+    }
+  }
+
+  .right {
+    flex: 0.5;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    input {
+      box-shadow: var(--shd, 0 0 0 transparent);
+      font: var(--fnt, var(--font_8));
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      border-radius: var(--corvid-border-radius, var(--rd, 0));
+      background-color: var(
+        --corvid-background-color,
+        rgba(var(--bg, 255, 255, 255), var(--alpha-bg, 1))
+      );
+      border-color: var(
+        --corvid-border-color,
+        rgba(var(--brd, 227, 227, 227), var(--alpha-brd, 1))
+      );
+      border-width: var(--corvid-border-width, var(--brw, 1px));
+      box-sizing: border-box !important;
+      border-style: solid;
+      padding: var(--textPadding);
+      margin: 0;
+      max-width: 80%;
+      text-overflow: ellipsis;
+      text-align: var(--textAlign);
+      direction: var(--dir);
+      min-height: var(--inputHeight);
+      width: 100%;
+    }
+
+    textarea {
+      -webkit-appearance: none;
+      box-shadow: var(--shd, 0 0 0 transparent);
+      border-radius: var(--corvid-border-radius, var(--rd, 0));
+      font: var(--fnt, var(--font_8));
+      border-width: var(--corvid-border-width, var(--brw, 1px));
+      border-color: var(
+        --corvid-border-color,
+        rgba(var(--brd, 227, 227, 227), var(--alpha-brd, 1))
+      );
+      resize: none;
+      box-sizing: border-box !important;
+      padding: var(--textPadding, 3px);
+      margin: 0;
+      padding-top: 0.75 em;
+      min-width: 80%;
+      overflow-y: auto;
+      text-align: var(--textAlign);
+      direction: var(--dir);
+      height: var(--inputHeight);
+      display: block;
+    }
+
+    .sendButton {
+      border-radius: 8px;
+      position: relative;
+      margin-top: 10px;
+    }
+  }
 }
