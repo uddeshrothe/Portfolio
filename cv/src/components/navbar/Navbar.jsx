@@ -6,7 +6,7 @@ function Navbar() {
       <nav class="navbar navbar-expand-lg navbar-light ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#intro">
-            Ore wa
+            Hello
           </a>
           <button
             class="navbar-toggler"
@@ -27,8 +27,8 @@ function Navbar() {
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#portfolio">
-                  Portfolio
+                <a class="nav-link" aria-current="page" href="#skills">
+                  Skills
                 </a>
               </li>
               <li class="nav-item">
